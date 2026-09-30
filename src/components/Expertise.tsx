@@ -1,44 +1,49 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import ShowChartIcon from '@mui/icons-material/ShowChart';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import MovieCreationIcon from '@mui/icons-material/MovieCreation';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+    "Forex / CFD Operations",
+    "Client Onboarding & KYC",
+    "IB Partnerships",
+    "MT5 Manager",
+    "MetaTrader Administration",
+    "Dealing Desk Coordination",
+    "Market Analysis",
+    "Bookmap",
+    "NinjaTrader 8",
+    "Client Acquisition"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Logistics Operations",
+    "First/Last-Mile",
+    "Hub Operations",
+    "Inventory Management",
+    "Shipment Tracking",
+    "ERP Systems",
+    "MIS Reporting",
+    "KPI Management",
+    "Team Leadership",
+    "Kaizen & 5S",
+    "SOP Implementation",
+    "MS Excel"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Digital Marketing",
+    "Social Media Marketing",
+    "Lead Generation",
+    "Brand Management",
+    "Premiere Pro",
+    "After Effects",
+    "Photoshop",
+    "Filmora",
+    "WordPress",
+    "Web Hosting"
 ];
 
 function Expertise() {
@@ -48,11 +53,11 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <ShowChartIcon sx={{ fontSize: 48 }} />
+                    <h3>Forex Brokerage & Market Analysis</h3>
+                    <p>Over four years of hands-on experience running CFD forex brokerage operations, from client onboarding and KYC to MT5 administration and dealing desk coordination. I also analyse institutional order flow on Gold (GC) futures using Bookmap and NinjaTrader 8, and work as an Introducing Broker.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Focus areas:</span>
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -60,11 +65,11 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <LocalShippingIcon sx={{ fontSize: 48 }} />
+                    <h3>Operations & Logistics</h3>
+                    <p>Nine years in logistics and e-commerce operations, including leading first-mile and last-mile hubs at Flipkart's Instakart. I have managed large teams, daily shipment volumes in the thousands, peak-season sales events, and KPI reporting for senior management.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Focus areas:</span>
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -72,11 +77,11 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <MovieCreationIcon sx={{ fontSize: 48 }} />
+                    <h3>Digital Marketing & Media</h3>
+                    <p>Co-founded Naomi Digital Media, producing video content, branding and social media campaigns for YouTubers, real estate developers, e-commerce brands and trading companies. I combine creative production with lead generation and client acquisition.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Focus areas:</span>
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}

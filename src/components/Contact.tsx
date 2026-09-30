@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
-// import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -18,35 +17,23 @@ function Contact() {
 
   const form = useRef();
 
-  const sendEmail = (e: any) => {
+  const sendMessage = (e: any) => {
     e.preventDefault();
 
     setNameError(name === '');
     setEmailError(email === '');
     setMessageError(message === '');
 
-    /* Uncomment below if you want to enable the emailJS */
-
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
-
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
+    if (name !== '' && email !== '' && message !== '') {
+      const text = `Hi Himanshu, I'm ${name} (${email}).\n\n${message}`;
+      window.open(
+        `https://wa.me/971547808363?text=${encodeURIComponent(text)}`,
+        '_blank'
+      );
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
   };
 
   return (
@@ -54,7 +41,16 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          <p>Looking for CFD FOREX Brokerage Operations & Support, MIBs & IBsPartnership or Digital Media Services? Let's talk.</p>
+          <p>
+            <a href="https://wa.me/971547808363" target="_blank" rel="noreferrer">WhatsApp (UAE)</a>
+            {' | '}
+            <a href="https://wa.me/917770066834" target="_blank" rel="noreferrer">WhatsApp (India)</a>
+            {' | '}
+            <a href="mailto:themillionairehimanshu@gmail.com">Email</a>
+            {' | '}
+            <a href="https://www.linkedin.com/in/himanshu-mishra-a15197146/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </p>
           <Box
             ref={form}
             component="form"
@@ -103,8 +99,8 @@ function Contact() {
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
             />
-            <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
-              Send
+            <Button variant="contained" endIcon={<SendIcon />} onClick={sendMessage}>
+              Send on WhatsApp
             </Button>
           </Box>
         </div>
