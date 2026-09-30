@@ -1,86 +1,117 @@
-# Developer Portfolio Template 🚀
+# Himanshu Mukesh Mishra | Portfolio
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+Personal portfolio website of **Himanshu Mukesh Mishra**, a multi-industry business professional with experience in forex brokerage operations, market analysis, logistics and e-commerce, and digital media.
 
-## What is this?
+**Live site:** [himoly.github.io/my-portfolio](https://himoly.github.io/my-portfolio/)
 
-This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
+---
 
-View the [Demo](https://yujisatojr.github.io/react-portfolio-template/).
+## About Me
 
-**This template is free to use, and no attribution is required.** You can fork or download this repository to customize it for your own use. Please don't forget to leave a ⭐ if you like this portfolio!
+I have progressed from hands-on operational roles to entrepreneurship, managing businesses and client-focused services across different sectors. My strengths are operations management, business development, digital marketing and client acquisition.
 
+- **Forex & CFD brokerage:** client onboarding and KYC, MT5 Manager and MetaTrader administration, dealing desk coordination, IB partnerships and daily market analysis.
+- **Market analysis:** institutional order-flow analysis of COMEX Gold (GC) futures using Bookmap and NinjaTrader 8.
+- **Operations & logistics:** first-mile and last-mile hub operations at Flipkart's Instakart, KPI reporting, MIS dashboards, and Kaizen and 5S process improvement.
+- **Digital media & marketing:** co-founded Naomi Digital Media, delivering video production, branding and social media management.
+- **Entrepreneurship:** founded HM Electronics, which designed, manufactured and sold about 10,000 water overflow control devices.
 
+## What's On The Site
 
-## Features
+| Section | Content |
+|---|---|
+| **Intro** | Name, title and social links |
+| **Expertise** | Forex Brokerage & Market Analysis, Operations & Logistics, Digital Marketing & Media |
+| **Career History** | Interactive timeline of roles from 2012 to the present |
+| **Highlights** | Order-flow analysis, Naomi Digital Media, HM Electronics, Flipkart hub operations |
+| **Contact** | Direct links plus a form that opens WhatsApp with the message pre-filled |
 
-✅ Open source (free to use, no attribution required)  
-✅ Responsive design & mobile-friendly  
-✅ Supports both dark and light modes  
-✅ Highly customizable multi-component layout  
-✅ Built with modern technologies (React, TypeScript, JavaScript, and SCSS)  
+The site is responsive, works on mobile, and supports light and dark modes.
 
-## Quick Setup
+## Career Snapshot
 
-1. Ensure you have [Node.js](https://nodejs.org/) installed. Check your installation by running:
+| Period | Role | Organization |
+|---|---|---|
+| Aug 2025 - Present | Introducing Broker (IB) | StarTrader |
+| Feb 2025 - May 2026 | Sales & Operations Officer | Rabab Markets, Dubai |
+| Feb 2024 - Jan 2025 | Administrative Operation Manager | FXTray, Chandigarh |
+| Feb 2022 - Dec 2023 | Operation Manager | Unifi Forex, Goa |
+| Sep 2020 - Jan 2022 | Co-founder | Naomi Digital Media, Mumbai |
+| Sep 2015 - Sep 2020 | Team Leader, Last Mile Operations | Instakart (Flipkart), Mumbai |
+| May 2013 - Jan 2015 | Founder | HM Electronics, Mumbai |
+| Jan 2012 - Jan 2013 | Large Parcel Incharge | Madhur Courier Services, Mumbai |
 
-    ```bash
-    node -v
-    ```
+## Core Skills
 
-2. In the project directory, install dependencies:
+- **Brokerage & Financial Markets:** Forex/CFD Operations, Client Onboarding, IB Partnerships, MT5 Manager, Dealing Desk Coordination, Market Analysis
+- **Operations & Logistics:** Hub Operations, Inventory Management, Shipment Tracking, ERP Systems, MIS Reporting, KPI Management, Team Leadership
+- **Process Improvement:** SOP Implementation, Kaizen, 5S, Root Cause Analysis, Operational Audits
+- **Digital Marketing:** Social Media Marketing, Lead Generation, Brand Management
+- **Creative & Technology:** Premiere Pro, After Effects, Photoshop, Filmora, WordPress, Web Hosting
+- **Data & Reporting:** MS Excel, Data Analysis, Operational Dashboards
 
-    ```bash
-    npm install
-    ```
+## Tech Stack
 
-3. Start the development server:
+This site is built with:
 
-    ```bash
-    npm start
-    ```
+- [React](https://react.dev/) 18 and TypeScript
+- [Material UI](https://mui.com/) and Font Awesome for components and icons
+- [react-vertical-timeline-component](https://github.com/stephane-monnot/react-vertical-timeline) for the career timeline
+- SCSS for styling
+- [gh-pages](https://github.com/tschaub/gh-pages) for deployment to GitHub Pages
 
-4. Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+## Project Structure
 
-5. Customize the template by navigating to the `/src/components` directory. Modify texts, pictures, and other information as needed.
+```
+my-portfolio/
+├── public/                # Static files: index.html, favicon, avatar.jpg, projects/
+└── src/
+    ├── assets/styles/     # SCSS files for each section
+    └── components/
+        ├── Main.tsx        # Intro and social links
+        ├── Expertise.tsx   # Skill cards
+        ├── Timeline.tsx    # Career history
+        ├── Project.tsx     # Highlights
+        ├── Contact.tsx     # Contact links and form
+        ├── Footer.tsx
+        └── Navigation.tsx
+```
 
-The page will reload if you make edits, and you will see any lint errors in the console.
+## Run Locally
 
-If you are interested in creating a mockup image like the ones from the personal projects section, I recommend [Genmoo](https://gemoo.com/tools/browser-mockup-generator/). This website lets you generate sleek looking browser mockups for free.
+Requires [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/).
 
-## Deployment
+```bash
+git clone https://github.com/himoly/my-portfolio.git
+cd my-portfolio
+npm install
+npm start
+```
 
-You can choose your preferred service (e.g., [Netlify](https://www.netlify.com/), [Render](https://render.com/), [Heroku](https://www.heroku.com/)) for deployment. One of the easiest ways to host this portfolio is using GitHub Pages. Follow the instructions below for a production deploy.
+Then open [http://localhost:3000](http://localhost:3000). The page reloads as you edit files.
 
-1. **Set Up GitHub Repository**
+## Deploy
 
-    Create a new repository on GitHub for your portfolio app.
+The site is hosted on GitHub Pages. After making changes:
 
-2. **Configure `package.json`**
+```bash
+git add .
+git commit -m "Update"
+git push
+npm run deploy
+```
 
-    Edit the following properties in your `package.json` file:
+`npm run deploy` builds the site and publishes it to the `gh-pages` branch. The `homepage` field in `package.json` must match the site address.
 
-    ```json
-    {
-        "homepage": "https://yourusername.github.io/your-repo-name",
-        "scripts": {
-            "predeploy": "npm run build",
-            "deploy": "gh-pages -d build",
-            ...
-        }
-    }
-    ```
+## Connect
 
-    Replace `yourusername` with your GitHub username and `your-repo-name` with the name of your GitHub repository.
+- LinkedIn: [himanshu-mishra-a15197146](https://www.linkedin.com/in/himanshu-mishra-a15197146/)
+- Email: [themillionairehimanshu@gmail.com](mailto:themillionairehimanshu@gmail.com)
 
-3. **Deploy to GitHub Pages**
+## Disclaimer
 
-    Run the following command to deploy your app:
+Content on this site is for information only and is not financial advice. CFDs and forex are leveraged products and carry a high risk of losing money.
 
-    ```bash
-    npm run deploy
-    ```
+## Credits
 
-4. **Access Your Deployed App**
-
-    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
+Built on the open-source [React Portfolio Template](https://github.com/yujisatojr/react-portfolio-template) by Yuji Sato, customized with my own content and design changes.
